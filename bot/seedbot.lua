@@ -55,7 +55,7 @@ function msg_valid(msg)
 
   if msg.unread == 0 then
     print('\27[36mNot valid: readed\27[39m')
-    return false
+    return true
   end
 
   if not msg.to.id then
